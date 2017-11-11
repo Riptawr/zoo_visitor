@@ -2,7 +2,7 @@
 
 zoo_visitor is a simple tool to lookup a kafka broker by id, via a visit to the zookeeper
 
-Since kafka ships with no healthchecks of its own and using docker with jmx you cannot start additional java applications inside the container (you get a port bind error) to do the healtcheck, this simple binary should do the trick
+Since kafka ships with no healthchecks of its own and using docker with jmx you cannot start additional java applications inside the container (you get a port bind error unless you unset/reset the JMX) to do the healtcheck, this simple binary should do the trick.
 
 ## How to use
 0. Write a oneliner to parse your broker id from kafka server.properties e.g. 
