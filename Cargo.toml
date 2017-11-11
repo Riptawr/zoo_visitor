@@ -1,0 +1,9 @@
+[package]
+name = "zoo_visitor"
+version = "0.1.0"
+authors = ["lxk <lxk@droidcraft.org>"]
+
+[dependencies]
+zookeeper = "0.4"
+env_logger = "0.4.3"
+log = "0.3.8"
